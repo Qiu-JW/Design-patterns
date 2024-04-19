@@ -1,12 +1,14 @@
 package com.pattern.singleton.LazyInitialization.StaticInnerClass;
 
+import java.io.Serializable;
+
 /**
  * @Description
  * @Author Qiu
  * @Date 2024/4/19
  * 懒汉式：双重检查锁
  */
-public class Singleton {
+public class Singleton implements Serializable {
     // 私有构造方法
     private Singleton(){}
     // 申明Singleton类型变量
